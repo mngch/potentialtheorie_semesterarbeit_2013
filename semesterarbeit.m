@@ -30,9 +30,10 @@ y_chimney = 160;
 
 z_chimney = z_chamber-H_chamber;
 R_chimney = 100;
-rho_chimney = 400;
 
-H_chimney = 3000;
+
+H_chimney = 12700;
+
 
 
 
@@ -40,11 +41,22 @@ H_chimney = 3000;
 
 % numeric
 
-N = 5;  % number of edges of chamber
-L = 5;  % L/2 = number of layers in chamber
-
+N = 5;  % number of edges 
+L = 5;  % L/2 = number of layers 
 
 l_chimney = 10;         % number of layers in chimney
+
+
+% decrease rho_chimney with linear function
+for i=l_chimney:-1:1
+    rho_chimney(i) = 400-i*7;
+    rholayer(i) = i;
+end
+
+figure
+plot(rho_chimney,rholayer);
+xlabel('Dichteunterschied \rho  in kg/m^3')
+ylabel('Layer')
 
 
 
@@ -68,8 +80,10 @@ for x_obs = 1:1:200
         % CHIMNEY
         G = 0;
         chimney = make_chimney(x_obs-x_chimney,y_obs-y_chimney,z_chimney,N,l_chimney,R_chimney,H_chimney);
+        
+        % loop over chimney layers
         for i = 1 : length(chimney)
-            G = G + gravity(chimney(i), rho_chimney);
+            G = G + gravity(chimney(i), rho_chimney(i));
             if isnan(G) == 1
                 %disp(x_obs-x)
                 %disp(y_obs-y)
