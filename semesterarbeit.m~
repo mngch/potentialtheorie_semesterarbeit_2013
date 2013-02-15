@@ -32,7 +32,7 @@ z_chimney = z_chamber-H_chamber;
 R_chimney = 100;
 rho_chimney = 400;
 
-H_chimney = 3000;
+H_chimney = 12900;
 
 
 
@@ -86,20 +86,16 @@ end
 Grav_gesamt = Grav_chamber + Grav_chimney;
 
 % plot
-% 10^8 ugal
 figure;
-imagesc(Grav_chamber*10^8);
-colorbar
+imagesc(Grav_chamber*);
 title('chamber')
 
 figure;
-imagesc(Grav_chimney*10^8);
-colorbar
+imagesc(Grav_chimney);
 title('chimney')
 
 figure
-imagesc(Grav_gesamt*10^8);
-colorbar
+imagesc(Grav_gesamt);
 title('gesamt');
         
         
