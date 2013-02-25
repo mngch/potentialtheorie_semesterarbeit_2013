@@ -1,10 +1,10 @@
-% make_chimney
-% calculates coordinates for prisms building a chimney
+% make_conduit
+% calculates coordinates for prisms building a conduit
 % X,Y,Z coordinates center of bottom
 % n number of edges
 % d number of layers
-% H height of chimney
-function [prism] = make_chimney(X,Y,Z,n,d,R,H)
+% H height of conduit
+function [prism] = make_conduit(X,Y,Z,n,d,R,H)
 
 d=d+1; % to really have number of layers and not surfaces(discs)
 
@@ -18,6 +18,7 @@ for i = 1:d     % all the polygon discs bottom to top
     
     for m = 1:n+1;
         z(m) = H/d*i;
+        
     end
     
     
@@ -53,12 +54,12 @@ for i = 1:length(prism)
 end
 
 
-% %plot
-% close all
-% hold on
-% for u = 1:length(disc)
-%   plot3(disc(u).x, disc(u).y, disc(u).z);
-% end
+%plot
+close all
+hold on
+for u = 1:length(disc)
+  plot3(disc(u).x, disc(u).y, disc(u).z);
+end
 
 %remove empty prism
 for i=1:length(prism)
