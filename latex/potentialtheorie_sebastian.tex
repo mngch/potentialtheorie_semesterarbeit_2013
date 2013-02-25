@@ -100,19 +100,69 @@ title=\lstname,                 				% show the filename of files included with \
 \begin{document}
 
 
+\section*{Gravimetrische Modellierung eines vulkanischen Förderschlotes}
+
+\subsection*{Einleitung}
+
+In dieser Arbeit untersuche ich die Detektierbarkeit eines vulkanischen Förderschlotes per Gravimetrie.
+
+Dazu nutze ich das bereits in der Übung entwickelte Programm um eine Magmakammer gravimetrisch zu modellieren.
+Es implementiert den Algorithmus von Donald Plouff\footnote{Donald Plouff, Gravity and magnetic fields of polygonal prisms and application to magnetic terrain corrections, August 1976, Geophysics 41 4 p.727-741}, um die Schwerewirkung beliebig geformter Körper zu berechnen.\\
+
+Magmakammern bilden sich in der Lithospähre, wenn flüssiges Magma in Form von Blasen aus tieferen Bereichen aufgrund seiner geringeren Dichte aufsteigt und sich dort sammelt, wo die Dichte ähnlich groß wie die des umgebenden Gesteins ist.
+
+Dort kann es zu spontanen Entgasungen kommen, wodurch die Dichte weiter abnimmt und das Material aufsteigt. 
+Es bildet sich ein Vulkanschlot, welcher bis an die Oberfläche vordringen kann.\\
+
+Die Dichteuntersschiede lassen sich durch Gravimetrische Messungen feststellen und können möglicherweise Helfen, entsprechende Strukturen frühzeitig zu entdecken.
+
+\clearpage
+\section*{Geometrie}
+
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.4\textwidth]{../figures/geometry}
-\caption{Geometrie}
+\caption{Geometrie des Modells}
 \label{geometry}
 \end{figure}
+
+
+In Abbildung \ref{geometry} ist die verwendete Modellgeometrie dargestellt.
+
+Ich möchte eine relativ tief gelegene Magmakammer in 13 Kilometern Tiefe modellieren, welche ich als Ellipsoid mit einer Dichte von $2.5g/cm^3$ annähre. Die kurze Halbachse ist 300m lang, die lange Halbachse 1500m.
+
+Das umgebende Gestein erhält die durchschnittliche Krustengesteinsdichte von $2.7g/cm^3$.\\
+
+Im Schlot nimmt die Dichte wie bereits erwähnt nach oben hin ab. Beschrieben ist dies z.B. bei Kazahaya\footnote{
+Kohei Kazahaya, Hiroshi Shinohara, and Genji Saito, 2002, Degassing process of Satsuma-Iwojima volcano, Japan: Supply of volatile components from a deep magma chamber,Geological Survey of Japan, AIST, 1-1-1 Higashi Tsukuba, Ibaraki 305-8567, Japan
+}. Daher entstammt auch Abbildung \ref{origdens}, welche die Abhängigkeit der Dichte vom Umgebungsdruck und damit der Tiefe darstellt.\\
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.6\textwidth]{../figures/origdens.png}
+\caption{Dichteverteilung in einem Schlot nach Kazahaya et al 2002}
+\label{origdens}
+\end{figure}
+
+\clearpage
+Da eine genaue Berechnung der Dichteabnahme sehr kompliziert ist und den Rahmen dieser Arbeit sprengen würde, habe ich den Dichteverlauf vereinfacht als linear angenommen.
+In Abbildung \ref{rhomodel} ist die Abhängigkeit zu erkennen. Dabei habe ich den Vulkanschlot in 10 Ebenen unterteilt, welchen jeweils eine Dichte zugewiesen wird.
+
+Es ist er Dichteunterschied $\Delta \rho$ dargestellt, da dieser vom Programm verwendet wird, um Anomalien zu berechnen.
 
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.6\textwidth]{../figures/rho_model}
-\caption{rho model}
+\caption{Vereinfachtes, lineares Dichtemodell}
 \label{rhomodel}
 \end{figure}
+
+
+\subsection*{Programmaufbau}
+
+
+
+\subsection*{Ergebnisse}
 
 \begin{figure}[htb]
 \centering

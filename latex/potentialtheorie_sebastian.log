@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.9.29)  25 FEB 2013 15:32
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.9.29)  25 FEB 2013 16:50
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -635,47 +635,88 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \c@lstlisting=\count126
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--111
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--116
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (18.125pt): 
+ Make it at least 25.23671pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[1{/usr/local/texlive/2011/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+]
 Package epstopdf Info: Source file: <../figures/geometry.eps>
-(epstopdf)                    date: 2013-02-25 15:32:31
-(epstopdf)                    size: 25694 bytes
+(epstopdf)                    date: 2013-02-25 15:44:08
+(epstopdf)                    size: 65280 bytes
 (epstopdf)             Output file: <../figures/geometry-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-02-25 15:31:23
-(epstopdf)                    size: 5443 bytes
+(epstopdf)                    date: 2013-02-25 15:44:13
+(epstopdf)                    size: 10890 bytes
 (epstopdf)             Command: <epstopdf --outfile=../figures/geometry-eps-con
 verted-to.pdf ../figures/geometry.eps>
-(epstopdf)             \includegraphics on input line 105.
-runsystem(epstopdf --outfile=../figures/geometry-eps-converted-to.pdf ../figure
-s/geometry.eps)...executed.
+(epstopdf)             \includegraphics on input line 124.
+Package epstopdf Info: Output file is already uptodate.
 
-Package epstopdf Info: Result file: <../figures/geometry-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-02-25 15:32:34
-(epstopdf)                    size: 5874 bytes.
-
-<../figures/geometry-eps-converted-to.pdf, id=1, 388.45125pt x 494.84875pt>
+<../figures/geometry-eps-converted-to.pdf, id=14, 447.6725pt x 546.04pt>
 File: ../figures/geometry-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ../figures/geometry-eps-converted-to.pdf>
 Package pdftex.def Info: ../figures/geometry-eps-converted-to.pdf used on input
- line 105.
-(pdftex.def)             Requested size: 179.24963pt x 228.35051pt.
+ line 124.
+(pdftex.def)             Requested size: 179.24963pt x 218.63708pt.
+
+Overfull \hbox (1.21481pt too wide) in paragraph at lines 134--135
+[]\T1/cmr/m/n/12 Das um-ge-ben-de Ge-stein er-hält die durch-schnitt-li-che Kru
+s-ten-ge-steins-dich-te von $\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 :\OT1/cmr/m/n/12
+ 7\OML/cmm/m/it/12 g=cm[]$\T1/cmr/m/n/12 . 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--139
+
+ []
+
+<../figures/origdens.png, id=15, 534.99875pt x 354.32375pt>
+File: ../figures/origdens.png Graphic file (type png)
+
+<use ../figures/origdens.png>
+Package pdftex.def Info: ../figures/origdens.png used on input line 142.
+(pdftex.def)             Requested size: 268.8813pt x 178.08595pt.
+ [2
+
+ <../figures/geometry-eps-converted-to.pdf>]
+[3 <../figures/origdens.png>]
 Package epstopdf Info: Source file: <../figures/rho_model.eps>
-(epstopdf)                    date: 2013-02-25 14:57:08
-(epstopdf)                    size: 8633 bytes
+(epstopdf)                    date: 2013-02-25 16:49:35
+(epstopdf)                    size: 8815 bytes
 (epstopdf)             Output file: <../figures/rho_model-eps-converted-to.pdf>
 
-(epstopdf)                    date: 2013-02-25 15:10:40
-(epstopdf)                    size: 7975 bytes
+(epstopdf)                    date: 2013-02-25 16:49:43
+(epstopdf)                    size: 8135 bytes
 (epstopdf)             Command: <epstopdf --outfile=../figures/rho_model-eps-co
 nverted-to.pdf ../figures/rho_model.eps>
-(epstopdf)             \includegraphics on input line 112.
+(epstopdf)             \includegraphics on input line 155.
 Package epstopdf Info: Output file is already uptodate.
 
-<../figures/rho_model-eps-converted-to.pdf, id=2, 495.8525pt x 398.48875pt>
+<../figures/rho_model-eps-converted-to.pdf, id=41, 495.8525pt x 398.48875pt>
 File: ../figures/rho_model-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ../figures/rho_model-eps-converted-to.pdf>
 Package pdftex.def Info: ../figures/rho_model-eps-converted-to.pdf used on inpu
-t line 112.
+t line 155.
 (pdftex.def)             Requested size: 268.8813pt x 216.0867pt.
 Package epstopdf Info: Source file: <../figures/2dchamber_contour.eps>
 (epstopdf)                    date: 2013-02-25 14:56:34
@@ -686,16 +727,16 @@ Package epstopdf Info: Source file: <../figures/2dchamber_contour.eps>
 (epstopdf)                    size: 50612 bytes
 (epstopdf)             Command: <epstopdf --outfile=../figures/2dchamber_contou
 r-eps-converted-to.pdf ../figures/2dchamber_contour.eps>
-(epstopdf)             \includegraphics on input line 119.
+(epstopdf)             \includegraphics on input line 169.
 Package epstopdf Info: Output file is already uptodate.
 
-<../figures/2dchamber_contour-eps-converted-to.pdf, id=3, 506.89375pt x 393.47p
-t>
+<../figures/2dchamber_contour-eps-converted-to.pdf, id=42, 506.89375pt x 393.47
+pt>
 File: ../figures/2dchamber_contour-eps-converted-to.pdf Graphic file (type pdf)
 
  <use ../figures/2dchamber_contour-eps-converted-to.pdf>
 Package pdftex.def Info: ../figures/2dchamber_contour-eps-converted-to.pdf used
- on input line 119.
+ on input line 169.
 (pdftex.def)             Requested size: 358.50612pt x 278.29095pt.
 Package epstopdf Info: Source file: <../figures/2dconduit_contour.eps>
 (epstopdf)                    date: 2013-02-25 14:56:35
@@ -706,16 +747,16 @@ Package epstopdf Info: Source file: <../figures/2dconduit_contour.eps>
 (epstopdf)                    size: 36129 bytes
 (epstopdf)             Command: <epstopdf --outfile=../figures/2dconduit_contou
 r-eps-converted-to.pdf ../figures/2dconduit_contour.eps>
-(epstopdf)             \includegraphics on input line 127.
+(epstopdf)             \includegraphics on input line 177.
 Package epstopdf Info: Output file is already uptodate.
 
-<../figures/2dconduit_contour-eps-converted-to.pdf, id=4, 506.89375pt x 393.47p
-t>
+<../figures/2dconduit_contour-eps-converted-to.pdf, id=43, 506.89375pt x 393.47
+pt>
 File: ../figures/2dconduit_contour-eps-converted-to.pdf Graphic file (type pdf)
 
  <use ../figures/2dconduit_contour-eps-converted-to.pdf>
 Package pdftex.def Info: ../figures/2dconduit_contour-eps-converted-to.pdf used
- on input line 127.
+ on input line 177.
 (pdftex.def)             Requested size: 358.50612pt x 278.29095pt.
 Package epstopdf Info: Source file: <../figures/2dwhole_contour.eps>
 (epstopdf)                    date: 2013-02-25 14:56:36
@@ -726,14 +767,15 @@ o.pdf>
 (epstopdf)                    size: 37306 bytes
 (epstopdf)             Command: <epstopdf --outfile=../figures/2dwhole_contour-
 eps-converted-to.pdf ../figures/2dwhole_contour.eps>
-(epstopdf)             \includegraphics on input line 134.
+(epstopdf)             \includegraphics on input line 184.
 Package epstopdf Info: Output file is already uptodate.
 
-<../figures/2dwhole_contour-eps-converted-to.pdf, id=5, 506.89375pt x 393.47pt>
+<../figures/2dwhole_contour-eps-converted-to.pdf, id=44, 506.89375pt x 393.47pt
+>
 File: ../figures/2dwhole_contour-eps-converted-to.pdf Graphic file (type pdf)
-<use ../figures/2dwhole_contour-eps-converted-to.pdf>
+ <use ../figures/2dwhole_contour-eps-converted-to.pdf>
 Package pdftex.def Info: ../figures/2dwhole_contour-eps-converted-to.pdf used o
-n input line 134.
+n input line 184.
 (pdftex.def)             Requested size: 358.50612pt x 278.29095pt.
 Package epstopdf Info: Source file: <../figures/2dwhole_surfc.eps>
 (epstopdf)                    date: 2013-02-25 14:56:38
@@ -744,15 +786,15 @@ pdf>
 (epstopdf)                    size: 334185 bytes
 (epstopdf)             Command: <epstopdf --outfile=../figures/2dwhole_surfc-ep
 s-converted-to.pdf ../figures/2dwhole_surfc.eps>
-(epstopdf)             \includegraphics on input line 141.
+(epstopdf)             \includegraphics on input line 191.
 Package epstopdf Info: Output file is already uptodate.
 
-<../figures/2dwhole_surfc-eps-converted-to.pdf, id=6, 516.93124pt x 385.44pt>
+<../figures/2dwhole_surfc-eps-converted-to.pdf, id=45, 516.93124pt x 385.44pt>
 File: ../figures/2dwhole_surfc-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ../figures/2dwhole_surfc-eps-converted-to.pdf>
 Package pdftex.def Info: ../figures/2dwhole_surfc-eps-converted-to.pdf used on 
-input line 141.
+input line 191.
 (pdftex.def)             Requested size: 358.50612pt x 267.32423pt.
 Package epstopdf Info: Source file: <../figures/var_height.eps>
 (epstopdf)                    date: 2013-02-25 14:57:15
@@ -763,48 +805,48 @@ Package epstopdf Info: Source file: <../figures/var_height.eps>
 (epstopdf)                    size: 13046 bytes
 (epstopdf)             Command: <epstopdf --outfile=../figures/var_height-eps-c
 onverted-to.pdf ../figures/var_height.eps>
-(epstopdf)             \includegraphics on input line 149.
+(epstopdf)             \includegraphics on input line 199.
 Package epstopdf Info: Output file is already uptodate.
 
-<../figures/var_height-eps-converted-to.pdf, id=7, 534.99875pt x 393.47pt>
+<../figures/var_height-eps-converted-to.pdf, id=46, 534.99875pt x 393.47pt>
 File: ../figures/var_height-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ../figures/var_height-eps-converted-to.pdf>
 Package pdftex.def Info: ../figures/var_height-eps-converted-to.pdf used on inp
-ut line 149.
+ut line 199.
 (pdftex.def)             Requested size: 358.50612pt x 263.67755pt.
+ [4
 
-
-Package Fancyhdr Warning: \headheight is too small (18.125pt): 
- Make it at least 25.23671pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[1{/usr/local/texlive/2011/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-
- <../figures/geometry-eps-converted-to.pdf>] [2 <../figures/rho_model-eps-conve
-rted-to.pdf> <../figures/2dchamber_contour-eps-converted-to.pdf>] [3 <../figure
-s/2dconduit_contour-eps-converted-to.pdf> <../figures/2dwhole_contour-eps-conve
-rted-to.pdf>] [4 <../figures/2dwhole_surfc-eps-converted-to.pdf> <../figures/va
-r_height-eps-converted-to.pdf>] (./potentialtheorie_sebastian.aux) ) 
+ <../figures/rho_model-eps-converted-to.pdf>] [5 <../figures/2dchamber_contour-
+eps-converted-to.pdf> <../figures/2dconduit_contour-eps-converted-to.pdf>] [6 <
+../figures/2dwhole_contour-eps-converted-to.pdf> <../figures/2dwhole_surfc-eps-
+converted-to.pdf>] [7 <../figures/var_height-eps-converted-to.pdf>] (./potentia
+ltheorie_sebastian.aux) ) 
 Here is how much of TeX's memory you used:
- 6329 strings out of 493633
- 89295 string characters out of 3143377
+ 6374 strings out of 493633
+ 89857 string characters out of 3143377
  189400 words of memory out of 3000000
- 9510 multiletter control sequences out of 15000+200000
- 6360 words of font info for 19 fonts, out of 3000000 for 9000
+ 9540 multiletter control sequences out of 15000+200000
+ 13772 words of font info for 37 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 47i,11n,49p,284b,298s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/local
-/texlive/2011/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/t
-exlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/tex
-live/2011/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texli
-ve/2011/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive
-/2011/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on potentialtheorie_sebastian.pdf (4 pages, 518953 bytes).
+ 47i,11n,49p,326b,296s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/local/texlive/2011/texmf-dist/fonts/enc/dvips/cm
+-super/cm-super-t1.enc}</usr/local/texlive/2011/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmmi12.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr12.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr17.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr8.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/cm-super/
+sfbx1095.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/cm-super/sf
+bx1200.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/cm-super/sfbx
+1440.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/cm-super/sfrm07
+00.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/cm-super/sfrm0800
+.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/cm-super/sfrm1000.p
+fb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb
+></usr/local/texlive/2011/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on potentialtheorie_sebastian.pdf (7 pages, 677659 bytes).
 PDF statistics:
- 107 PDF objects out of 1000 (max. 8388607)
- 77 compressed objects within 1 object stream
+ 160 PDF objects out of 1000 (max. 8388607)
+ 116 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
