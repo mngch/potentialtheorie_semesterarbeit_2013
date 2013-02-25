@@ -36,11 +36,8 @@ end
 % make prism from disc
 for i = 1:length(disc)-1;
     h1 = (disc(i+1).z(1));
-%    if i > 1
-        h2 = (disc(i).z(1));
-%     else
-%         h2 = h1;
-%    end
+    h2 = (disc(i).z(1));
+
     prism(i) = struct('x',disc(i).x, 'y',disc(i).y, 'z1',h1, 'z2',h2 );
 end
 
@@ -48,17 +45,17 @@ end
 for i = 1:length(prism)
     prism(i).x = prism(i).x + X;
     prism(i).y = prism(i).y + Y;
-    prism(i).z1 = prism(i).z1 - Z;
-    prism(i).z2 = prism(i).z2 - Z;
+    prism(i).z1 = Z - prism(i).z1;
+    prism(i).z2 = Z - prism(i).z2;
 end
 
 
 %plot
-close all
-hold on
-for u = 1:length(disc)
-  plot3(disc(u).x, disc(u).y, disc(u).z);
-end
+% close all
+% hold on
+% for u = 1:length(disc)
+%   plot3(disc(u).x, disc(u).y, disc(u).z);
+% end
 
 %remove empty prism
 for i=1:length(prism)

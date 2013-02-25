@@ -205,7 +205,7 @@ for i=1:length(Grav_conduit_1d(:,1))
     plot(Grav_conduit_1d(i,:)*10^8,'color',cc(i,:),'LineWidth',2)
 end
 ylabel('Schwereanomalie in  \muGal');
-xlabel('Position entlang des Profils in [km]');
+xlabel('X-Position entlang des Profils in [km]');
 h = legend(cellstr(num2str((H_conduit)')),'Location','SE');
 v = get(h,'title');
 set(v,'string','\fontsize{14}Höhe des Schlotes in [m]');
