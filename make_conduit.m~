@@ -6,18 +6,19 @@
 % H height of conduit
 function [prism] = make_conduit(X,Y,Z,n,d,R,H)
 
+d=d+1; % to really have number of layers and not surfaces(discs)
 
 da = 2*pi/n; % increase in angle for circle
 
 
 l = 1;
-for i = 1:d+1     % all the polygon discs bottom to top
+for i = 1:d     % all the polygon discs bottom to top
     r = R;
     
     
-    
     for m = 1:n+1;
-        z(m) = H/d*(i-1);   
+        z(m) = H/d*i;
+        
     end
     
     
@@ -35,21 +36,21 @@ end
 
 % make prism from disc
 for i = 1:length(disc)-1;
-    h1 = (disc(i+1).z(1));
-%    if i > 1
-        h2 = (disc(i).z(1));
-%     else
-%         h2 = h1;
-%    end
-    prism(i) = struct('x',disc(i).x, 'y',disc(i).y, 'z1',h1, 'z2',h2 );
+    h1 = (disc(i+1).z(1);
+    if i > 1
+        h2 = (disc(i).z(1) - disc(i-1).z(1))/2;
+    else
+        h2 = h1;
+    end
+    prism(i) = struct('x',disc(i).x, 'y',disc(i).y, 'z1',disc(i).z(1)+h1, 'z2',disc(i).z(1)-h2 );
 end
 
 % move prisms to coordinates
 for i = 1:length(prism)
     prism(i).x = prism(i).x + X;
     prism(i).y = prism(i).y + Y;
-    prism(i).z1 = prism(i).z1 - Z;
-    prism(i).z2 = prism(i).z2 - Z;
+    prism(i).z1 = prism(i).z1 + Z;
+    prism(i).z2 = prism(i).z2 + Z;
 end
 
 
